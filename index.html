@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+    <link rel="stylesheet" href="style.css">
+<TITLE>文字の表現</TITLE>
+</HEAD>
+<BODY>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1>【　文字の表現　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+コンピュータでは、通常使用する文字を2進数の情報で識別します。コンピュータは内部に<p class="di"><strong>｢文字コード表｣</strong></p>と呼ばれる表があり、コンピュータで使用する文字を2進数の表現で対応付けています。米国ではすべての文字を1バイトで構成するのに対し、日本では米国で使用されているアルファベットや数値のほかに、ひらがな・カタカナ・漢字・記号など数多くの文字種を常用するため、文字を2バイトでコード化しています。代表的な文字コードには、次のようなものがあります。
+
+<script>
+    const buttom = document.getElementById('buttom');
+    const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+
+    // マウスホバー時
+    buttom.addEventListener('mouseover', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '1';
+        });
+    }, false);
+
+    // マウスが離れている時
+    buttom.addEventListener('mouseleave', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '0';
+        });
+    }, false);
+</script>
+
+
+<P><IMG src="1-1-1-4.jpg" width="600" border="0"></P>
+</BODY>
+</HTML>
